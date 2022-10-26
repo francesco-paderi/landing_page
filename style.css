@@ -1,0 +1,234 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    box-sizing: border-box;
+    background-color: #eeeeee;
+}
+
+header {
+    margin: 0;
+    padding: 0 20px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    z-index: 7;
+    background-color: #eeeeee;
+}
+
+header #header-img {
+    width: 20%;
+    max-width: 100%;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+nav ul li {
+    display: inline-block;
+    margin: 0 30px;
+    list-style: none;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: black;
+}
+
+nav ul li a:hover {
+    color: #A19191;
+}
+
+/*------FEATURES------*/
+
+main {
+    position: relative;
+    top: 50px;
+}
+
+main .title-box {
+    text-align: center;
+    font-size: 35px;
+    font-weight: 800;
+}
+
+#features-submit {
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    justify-content: space-around;
+    height: 80vh;
+
+    border: 1px solid aqua;
+}
+
+#features-submit .email {
+    position: relative;
+    right: 6.25em;
+    bottom: 7.1em;
+    border: 1px solid purple;
+    text-align: center;
+    box-sizing: border-box;
+    margin: 0;
+    padding-bottom: 20px;
+}
+
+#features-submit .email form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+#features-submit .email form input{
+    padding: 10px;
+    outline: none;
+    font-size: 16px;
+    width: 90%;
+    margin-bottom: 15px;
+    border-radius: 5px;
+    border: 0;
+}
+
+#features-submit .email form input:focus {
+    box-shadow: 0 0 16px 2px #A19191;
+}
+
+#features-submit .email form button {
+    outline: 0;
+    padding: 7px 10px;
+    width: 40%;
+    border-radius: 5px;
+    border: 0;
+    cursor: pointer;
+    font-weight: 700;
+    box-shadow: 0;
+    background-color: yellow;
+    transition: all 500ms ease;
+}
+
+#features-submit .email form button:hover {
+    box-shadow: 0px 0px 16px 2px #ffd000;
+}
+
+#features-submit input[type='submit'] {
+    border: 1px solid red;
+    width: 50%;
+    border-radius: 5px;
+
+}
+
+#features-submit #features {
+    margin-right: 150px;
+}
+  
+#features .container {
+    display: grid;
+    grid-template-columns: 25% 50%;
+    grid-template-rows: auto;
+    grid-template-areas: 
+                        "icon title title"
+                        "icon description description";
+    border: 1px solid green;
+    margin-right: 100px;
+}
+
+#features .container #item-1 {
+    grid-area: icon;
+    justify-self: end;
+    align-self: start;
+    margin: 21px 20px 0 0;
+    border: 1px solid red;
+  
+    font-size: 84px;
+}
+  
+#features .container #item-2 {
+    grid-area: title;
+    justify-self: start;
+    align-self: start;
+    border: 1px solid blue;
+    
+}
+  
+#features .container #item-3 {
+    grid-area: description;
+    justify-self: end;
+    align-self: start;
+    border: 1px solid green;
+    position: relative;
+    bottom: 35px;
+}
+
+/*------HOW IT WORKS------*/
+
+main .video {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+main .video iframe {
+    width: 85%;
+    height: 85vh;
+    padding-bottom: 28vh;
+}
+
+/*------PRICING------*/
+
+main .pricing {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    gap: 0 20px;
+    text-align: center;
+    height: 100vh;
+}
+
+main .pricing .trombone {
+    border: 2px solid #dddddd;
+    background-color: #eeeeee;
+    box-sizing: border-box;
+    margin: 0;
+}
+
+main .pricing .trombone > h3 {
+    background-color: #dddddd;
+    padding: 10px 50px;
+    box-sizing: border-box;
+    position: relative;
+    bottom: 20px;
+    
+}
+
+main .pricing .trombone > p {
+    padding: 50px;
+}
+
+main .pricing .trombone > button {
+    margin-bottom: 20px;
+}
+
+.pricing .trombone button {
+    outline: 0;
+    padding: 7px 15px;
+    width: 40%;
+    border-radius: 5px;
+    border: 0;
+    cursor: pointer;
+    font-weight: 700;
+    box-shadow: 0;
+    background-color: yellow;
+    transition: all 500ms ease;
+}
+
+.pricing .trombone button:hover {
+    box-shadow: 0px 0px 16px 2px #ffd000;
+}
