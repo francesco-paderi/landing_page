@@ -64,15 +64,12 @@ main .title-box {
     align-items: center;
     justify-content: space-around;
     height: 80vh;
-
-    border: 1px solid aqua;
 }
 
 #features-submit .email {
     position: relative;
     right: 6.25em;
     bottom: 7.1em;
-    border: 1px solid purple;
     text-align: center;
     box-sizing: border-box;
     margin: 0;
@@ -118,7 +115,6 @@ main .title-box {
 }
 
 #features-submit input[type='submit'] {
-    border: 1px solid red;
     width: 50%;
     border-radius: 5px;
 
@@ -135,33 +131,27 @@ main .title-box {
     grid-template-areas: 
                         "icon title title"
                         "icon description description";
-    border: 1px solid green;
     margin-right: 100px;
 }
 
 #features .container #item-1 {
     grid-area: icon;
-    justify-self: end;
+    justify-self: center;
     align-self: start;
     margin: 21px 20px 0 0;
-    border: 1px solid red;
-  
-    font-size: 84px;
+    font-size: 50px;
 }
   
 #features .container #item-2 {
     grid-area: title;
     justify-self: start;
     align-self: start;
-    border: 1px solid blue;
-    
 }
   
 #features .container #item-3 {
     grid-area: description;
     justify-self: end;
     align-self: start;
-    border: 1px solid green;
     position: relative;
     bottom: 35px;
 }
@@ -187,9 +177,9 @@ main .pricing {
     justify-content: center;
     align-items: center;
     flex-direction: row;
-    gap: 0 20px;
+    gap: 0 80px;
     text-align: center;
-    height: 100vh;
+    height: 90vh;
 }
 
 main .pricing .trombone {
@@ -209,7 +199,7 @@ main .pricing .trombone > h3 {
 }
 
 main .pricing .trombone > p {
-    padding: 50px;
+    padding: 80px 50px;
 }
 
 main .pricing .trombone > button {
@@ -231,4 +221,96 @@ main .pricing .trombone > button {
 
 .pricing .trombone button:hover {
     box-shadow: 0px 0px 16px 2px #ffd000;
+}
+
+/*------footer------*/
+
+footer {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+}
+
+footer ul {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+}
+
+footer ul li {
+    display: inline-block;
+    margin-right: 20px;
+}
+
+
+@media only screen and (min-width: 480px) and (max-width: 767px) {
+    header #header-img {
+        width: 40%;
+    }
+    
+    #features-submit {
+        flex-direction: column;
+        padding-top: 20vh;
+    }
+    
+    #features-submit .email {
+        right: 0em;
+        bottom: 0em;
+        padding-bottom: 20vh;
+    }
+    
+    #features-submit #features {
+        margin-right: 0px; 
+        padding-bottom: 100px;
+    }
+
+    main .video iframe {
+        height: 55vh;
+        padding-bottom: 35vh;
+    }
+
+    main .pricing {
+        gap: 0 30px;
+        margin: 0 30vh;
+    }
+    
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1023px) {
+    header #header-img {
+        width: 30%;
+    }
+    
+    #features-submit {
+        padding-top: 20vh;
+    }
+    
+    #features-submit .email {
+        right: 0em;
+        bottom: 0em;
+        padding-bottom: 20vh;
+    } 
+    
+    #features-submit #features {
+        margin-right: 0px;
+        padding-bottom: 100px;
+    }
+      
+    main .video iframe {
+        height: 55vh;
+        padding-bottom: 35vh;
+    }
+
+    main .pricing {
+        gap: 0 30px; 
+        margin: 0 30vh; 
+    }
+}
+
+@media only screen and (min-width: 1024px) and (max-width: 1500px) {
+/*     *{
+        background-color: green;
+    } */
 }
